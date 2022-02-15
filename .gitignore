@@ -1,3 +1,7 @@
 data/
 config.yaml
 __pycache__/
+.DS_Store
+redcap-api-examples
+*.env
+.ipynb_checkpoints
