@@ -24,6 +24,6 @@ def records_to_dict(csv_str: str) -> dict:
     }
     return records_dict
 
-def bytes_to_image(img_bytes: bytes) -> PIL.JpegImagePlugin.JpegImageFile:
+def bytes_to_image(img_bytes: bytes) -> PIL.Image:
     stream = io.BytesIO(img_bytes)
     return PIL.Image.open(stream)
