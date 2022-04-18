@@ -3,9 +3,10 @@ from collections import OrderedDict
 import io
 import csv
 
-import PIL
+from PIL import Image
 from dotenv import dotenv_values
 import requests
+import numpy as np
 
 def read_env(file: str) -> OrderedDict:
     config_path = Path(file)
@@ -24,6 +25,7 @@ def records_to_dict(csv_str: str) -> dict:
     }
     return records_dict
 
-def bytes_to_image(img_bytes: bytes) -> PIL.Image:
-    stream = io.BytesIO(img_bytes)
-    return PIL.Image.open(stream)
+def bytes_to_img(data: np.array) -> Image:
+    size = data.shape[::-1]
+    databytes = np.packbits(data, axis=1)
+    return Image.frombytes(mode='1', size=size, data=databytes)
