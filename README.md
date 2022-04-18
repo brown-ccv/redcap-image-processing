@@ -13,4 +13,3 @@ This repo does not include (and will be stored on the shared drive) is:
 
 - `redcap-api-examples`: examples of how to use REDCap's API
 - `data`: miscellaneous data used
-- `src/validation.env`: API token and url for REDCap's validation server
