@@ -46,4 +46,4 @@ The script `src/test_api.py` tests the API used for the validation server. If yo
 python src/test_api.py
 ```
 
-For more information about the full scope of this project, see the google drive documentation [here](https://docs.google.com/document/d/1FVmQVf1kRhOgy_dkBS9O0v0NqKXxZU_7gTSRHI0iXYM/edit?usp=sharing).
+For more information about the full scope of this project, see the google drive documentation [here](https://drive.google.com/drive/folders/1-8i5lYVyXLfATh6kyM-_EwJ_JkCmnAYf?usp=sharing).
