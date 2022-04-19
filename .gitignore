@@ -4,3 +4,4 @@ __pycache__/
 redcap-api-examples
 *.env
 .ipynb_checkpoints
+*.zip
